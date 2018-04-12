@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ali/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <title>Thybot</title>
+    <style>
+        /* nav */
+        #main > .sol-nav {
+            margin-top: -2.5rem;
+        }
+
+        #main > .sol-nav h5 {
+            white-space: nowrap;
+        }
+
+        #main > .sol-nav .sol-nav-item:hover, #main > .sol-nav .sol-nav-item.active {
+            /*color: #007bff;*/
+            color: #000000;
+            background-color: #fff;
+            /*border-bottom: 4px solid #007bff;*/
+            border-bottom: 4px solid #000;
+        }
+
+        /* 核心技术 */
+        #main > #core .gif-container .gif {
+            display: none;
+        }
+
+        #main > #core .gif-container:hover .gif {
+            display: block;
+        }
+
+        #main > #core .gif-container:hover .stop {
+            display: none;
+        }
+
+        /* 系统优势 */
+        #system .title, #capacity .title {
+            border-bottom-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+
+        #system .title, #capacity .title {
+            line-height: 60px;
+        }
+
+        #system .icon {
+            font-size: inherit;
+        }
+
+        /* 智能零售 */
+
+        /* 支付渠道 */
+        #pay{
+            display: none;
+        }
+        /* show */
+        #pay,#core,#system,#capacity{
+            display: none;
+        }
+        #pay.show,#core.show,#system.show,#capacity.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<div id="main">
+    <div>
+        <img src="img/solution/solution.png" alt="" style="width: 100%">
+    </div>
+    <div class="container sol-nav">
+        <div class="row align-items-center text-center bg-light text-secondary">
+            <div class="col-12 col-md-3 pl-0 pr-0">
+                <h5 class="mb-0 active bg-light p-4 sol-nav-item"><strong>核心技术</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>系统优势</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>智能新零售解决方案</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>支付与购买渠道</strong></h5>
+            </div>
+        </div>
+    </div>
+    <div id="core" class="show sol-container">
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-md-last pl-md-5">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12">
+                            <p class="display-1 text-muted">
+                                <strong>01</strong>
+                            </p>
+                        </div>
+                        <div class="col-8  col-md-12">
+                            <h1>
+                                <b>货道灵活调整</b>
+                            </h1>
+                            <h4>
+                                履带安全出货+智能升降系统
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-first p-5 border border-secondary gif-container">
+                    <img src="img/solution/gif_stop_1.jpg" alt="" class="img-fluid stop">
+                    <img src="img/solution/gif_1.gif" alt="" class="img-fluid gif">
+                </div>
+            </div>
+        </div>
+        <div class="bg-light pt-5 pb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6  pl-md-5">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-md-12">
+                                <p class="display-1 text-muted">
+                                    <strong>02</strong>
+                                </p>
+                            </div>
+                            <div class="col-8  col-md-12">
+                                <h1>
+                                    <b>无动力货仓</b>
+                                </h1>
+                                <h4>
+                                    3轴机械臂，4 轴机械臂精准定位取货
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-5 border border-secondary gif-container">
+                        <img src="img/solution/gif_stop_2.png" alt="" class="img-fluid stop">
+                        <img src="img/solution/gif_2.gif" alt="" class="img-fluid gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6  pl-md-5">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12">
+                            <p class="display-1 text-muted">
+                                <strong>03</strong>
+                            </p>
+                        </div>
+                        <div class="col-8  col-md-12">
+                            <h1>
+                                <b>智能货仓</b>
+                            </h1>
+                            <h4>
+                                自动上货出货
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 order-md-first p-5 border border-secondary gif-container">
+                    <img src="img/solution/gif_stop_3.jpg" alt="" class="img-fluid stop">
+                    <img src="img/solution/gif_3.gif" alt="" class="img-fluid gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="system" class="sol-container">
+        <div class="container pt-5 pb-5 ">
+            <div class="row align-items-center pt-5 pb-5">
+                <!--<div class="col-8 col-md-4  pl-4 pr-4">-->
+                <div class="col-8 col-md-4">
+                    <h4 class="bg-dark text-white text-center title"><b>Linux开源系统</b></h4>
+                </div>
+                <div class="col-7 col-md-4 text-center order-md-last">
+                    <h3 class="p-3">
+                        <i class="icon font_family icon-compatibility"></i>
+                        兼容性
+                    </h3>
+                    <h3 class="p-3">
+                        <i class="icon font_family icon-stability"></i>
+                        稳定性
+                    </h3>
+                    <h3 class="p-3">
+                        <i class="icon font_family icon-security"></i>
+                        安全性
+                    </h3>
+                </div>
+                <div class="col-5 col-md-4 text-center">
+                    <img src="img/solution/system_1.png" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+        <div style="background: url('img/solution/bg_3.png') 0 0 repeat;" class="pt-5 pb-5">
+            <div class="container pt-3 pb-3">
+                <div class="row align-items-center">
+                    <div class="col-8 col-md-4">
+                        <h4 class="bg-dark text-white text-center title"><b>一站式自主研发系统</b></h4>
+                    </div>
+                    <div class="col-12 col-md-4 text-center pl-4 pb-4">
+                        <img src="img/solution/system_2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-6 col-md-12">
+                                <h4 class="pt-4">智能零售终端管控系统</h4>
+                                <h4 class="pt-4">物联网大数据分析平台</h4>
+
+                                <h4 class="pt-4">仓储业务系统</h4>
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <h4 class="pt-4">新媒体广告交互系统</h4>
+                                <h4 class="pt-4">智能零售交易平台</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center pt-5 pb-5">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-8 col-md-8">
+                            <h4 class="bg-dark text-white text-center title"><b>可视化后台管理系统</b></h4>
+                        </div>
+                        <div class="col-12 pt-5 pb-5">
+                            <img src="img/solution/system_5.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-platform "></i>全方位的管理平台</h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-transactiondetail"></i>交易明细实时查询</h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-close_aisle "></i>后台关闭指定货道</h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-diagnose "></i>系统故障自我诊断</h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-restart "></i>远程机器自动重启</h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-maintenance_report "></i>维修报告记录</h3>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-datadisplay "></i>综合数据显示</i></h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-repertory "></i>远程库存监控</i></h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-advertisement "></i>远程广告推送</i></h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-aisle_manage "></i>智能货道管理</i></h3>
+                            <h3 class="pt-3 pb-3"><i class="icon font_family icon-long_distance "></i>后台远程出货</i></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center pt-5 pb-5 ">
+                    <img src="img/solution/system_3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 text-center pt-5 pb-5">
+                    <img src="img/solution/system_4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="capacity" class="sol-container">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-9 col-md-12 pb-4">
+                            <h4 class="bg-dark text-white text-center title"><b>大数据分析</b></h4>
+                        </div>
+                        <div class="col-4  col-md-12 pl-5 pt-4">
+                            <h4>商圈分析</h4>
+                        </div>
+                        <div class="col-4  col-md-12 pl-5 pt-4">
+                            <h4>流量数据分析</h4>
+                        </div>
+                        <div class="col-4  col-md-12 pl-5 pt-4">
+                            <h4>消费行为分析</h4>
+                        </div>
+                        <div class="col-4  col-md-12 pl-5 pt-4">
+                            <h4>营销数据分析</h4>
+                        </div>
+                        <div class="col-4  col-md-12 pl-5 pt-4">
+                            <h4>精准广告推送</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <img src="img/solution/big_data.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container pt-3 pb-5 bg-light">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-9 col-md-12 pb-4">
+                            <h4 class="bg-dark text-white text-center title"><b>一站式解决方案</b></h4>
+                        </div>
+                        <div class="col-12 pl-5 pt-4 text-center">
+                            <h4>线上购物、线下取货</h4>
+                        </div>
+                        <div class="col-12 pl-5 pt-4 pb-4 text-center">
+                            <h4>实现O2O的真正闭环</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <img src="img/solution/solution_3.png" alt="" class="img-fluid" style="margin-top: -2rem;">
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-9 col-md-4 pb-5">
+                    <h4 class="bg-dark text-white text-center title"><b>个性化精准营销</b></h4>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="img/solution/solution4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pay" class="pt-5 sol-container">
+        <div class="container pt-5 pb-5">
+            <div class="line-title text-center pb-5">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>购买渠道</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">PURCHASING CHANNEL</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="row  align-items-center">
+                        <div class="col-6 col-md-12 text-center">
+                            <img src="img/solution/channel_1.png" alt="" class="img-fluid mb-5">
+                        </div>
+                        <div class="col-6 col-md-12 text-center">
+                            <button type="button" class="btn btn-outline-secondary">APP购买</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row  align-items-center">
+                        <div class="col-6 col-md-12 text-center">
+                            <img src="img/solution/channel_2.png" alt="" class="img-fluid mb-5">
+                        </div>
+                        <div class="col-6 col-md-12 text-center order-md-last order-first">
+                            <button type="button" class="btn btn-outline-secondary">直接在机器购买</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row  align-items-center">
+                        <div class="col-6 col-md-12 text-center">
+                            <img src="img/solution/channel_3.png" alt="" class="img-fluid mb-5">
+                        </div>
+                        <div class="col-6 col-md-12 text-center">
+                            <button type="button" class="btn btn-outline-secondary">其他平台购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light pt-5 pb-5">
+            <div class="container pt-5 pb-5">
+                <div class="line-title text-center pb-5">
+                    <h4>
+                        <span class="line mr-2"></span>
+                        <b>支付方式</b>
+                        <span class="line ml-2"></span>
+                    </h4>
+                    <p class="text-muted">MODE OF PAYMENT</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-md-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 pb-4">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">现金支付</button>
+                                    </div>
+                                    <div class="col-12 col-md-4 pb-4">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">硬币支付</button>
+                                    </div>
+                                    <div class="col-12 col-md-4 pb-4">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">刷卡支付</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-8 col-md-12">
+                                <img src="img/solution/pay_1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-md-12 text-right">
+                                <button type="button" class="btn btn-outline-secondary btn-sm">NFC支付</button>
+                            </div>
+                            <div class="col-8 col-md-12 order-first order-md-last">
+                                <img src="img/solution/pay_2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-md-12 text-md-right">
+                                <button type="button" class="btn btn-outline-secondary btn-sm">扫码支付</button>
+                            </div>
+                            <div class="col-8 col-md-12">
+                                <img src="img/solution/pay_3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="footer"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="js/header.js"></script>
+<script>
+    $('#main .sol-nav').on('click', '.sol-nav-item', function () {
+        let $this = $(this);
+        if(!$this.hasClass('active')){
+            let index = $this.parent().index();
+            $('#main .sol-nav-item.active').removeClass('active');
+            $this.addClass('active');
+            $('#main .sol-container.show').removeClass('show');
+            $('#main .sol-container').eq(index).addClass('show');
+            $this.parent()
+        }
+    })
+</script>
+</body>
+</html>

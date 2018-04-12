@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ali/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <title>Thybot</title>
+    <style>
+        .img-filter {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transition: filter .6s linear;
+        }
+
+        .img-filter:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+
+        .introduce {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .introduce-img {
+            position: relative;
+        }
+
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-bottom: 10px solid transparent;
+            border-top: 10px solid transparent;
+        }
+
+        .triangle.triangle-left {
+            border-right: 16px solid #fff;
+            border-left: 0;
+            right: 0;
+        }
+
+        .triangle.triangle-right {
+            border-left: 16px solid #fff;
+            border-right: 0;
+            left: 0;
+        }
+
+        .triangle.triangle-left.triangle-dark {
+            border-right-color: #343a40;
+        }
+
+        .triangle.triangle-right.triangle-dark {
+            border-left-color: #343a40;
+        }
+
+        .introduce-1 {
+            width: 50%;
+            height: 50%;
+            background: rgba(52, 58, 64, .9);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .intr{
+            height: 100%
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="main">
+    <div>
+        <img src="img/case/case_banner.png" alt="" style="width: 100%">
+    </div>
+    <div class="m-one pb-5 pt-5 bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-md-6 pl-0 pr-0 introduce-img">
+                    <img src="img/case/c1.png" alt="" class="img-fluid img-filter">
+                    <div class="introduce-1 introduce text-white">
+                        <h5>M1系列</h5>
+                        <p>PROSPEROUS SERIES</p>
+                        <button type="button" class="btn btn-outline-light btn-sm">高校传媒</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pl-0 pr-0 bg-white">
+                    <div class="row m-0">
+                        <div class="col-6 text-center pl-0 pr-0 introduce">
+                            <h5>M1系列</h5>
+                            <p>CLASSIC SERIES</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm">书展奇侠传</button>
+                        </div>
+                        <div class="col-6 pl-0 pr-0 introduce-img">
+                            <img src="img/case/c2.png" alt="" class="img-fluid img-filter">
+                            <div class="triangle triangle-right"></div>
+                        </div>
+                        <div class="col-6 pl-0 pr-0 introduce-img">
+                            <img src="img/case/c3.png" alt="" class="img-fluid img-filter">
+                            <div class="triangle triangle-left"></div>
+                        </div>
+                        <div class="col-6 text-center pl-0 pr-0 introduce">
+                            <h5>M1系列</h5>
+                            <p>CLASSIC SERIES</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm">开心神秘屋</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/c4.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-left"></div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce bg-white">
+                    <h5>M1系列</h5>
+                    <p>PROSPEROUS SERIES</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">利保高端智能零售体验店</button>
+                </div>
+                <div class="col-6 col-md-3 bg-dark text-white pl-0 pr-0 introduce">
+                    <h5>M1系列</h5>
+                    <p>CLASSIC SERIES</p>
+                    <button type="button" class="btn btn-outline-light btn-sm">美妆零售机器人</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/c5.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-right triangle-dark"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="binghe pb-5 pt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce bg-light">
+                    <h5>冰河系列</h5>
+                    <p>GLACIER SERIES</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">著名风景区</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/b1.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-right"></div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce bg-light">
+                    <h5>冰河系列</h5>
+                    <p>GLACIER SERIES</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">农博会</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/b2.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-right"></div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/b3.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-left"></div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce bg-light">
+                    <h5>冰河系列</h5>
+                    <p>GLACIER SERIES</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">丽水山耕</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce-img">
+                    <img src="img/case/b4.png" alt="" class="img-fluid img-filter">
+                    <div class="triangle triangle-left"></div>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 introduce bg-light">
+                    <h5>冰河系列</h5>
+                    <p>GLACIER SERIES</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">清华科技园</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="boao pb-5 pt-5">
+        <div class="container text-center">
+            <div class="line-title text-center pb-2">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>博鳌机场</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">BOAO AIRPORT</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 pt-2 pb-2">
+                    <img src="img/case/ao1.png" alt="" class="img-fluid img-filter">
+                </div>
+                <div class="col-6 col-md-3 pt-2 pb-2">
+                    <img src="img/case/ao2.png" alt="" class="img-fluid img-filter">
+                </div>
+                <div class="col-6 col-md-3 pt-2 pb-2">
+                    <img src="img/case/ao3.png" alt="" class="img-fluid img-filter">
+                </div>
+                <div class="col-6 col-md-3 pt-2 pb-2">
+                    <img src="img/case/ao4.png" alt="" class="img-fluid img-filter">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner pb-5 pt-5 bg-light">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-12 col-md-4 pt-3 pb-3">
+                    <div class="swiper-container intr">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide introduce">
+                                <h5>NAMA ONESHOW</h5>
+                                <p>世界规模最大的自动售货、咖啡服务和食品服务博览会</p>
+                                <button class="btn btn-outline-dark">美国自动售货展</button>
+                            </div>
+                            <div class="swiper-slide introduce">
+                                <h5>NAMA ONESHOW</h5>
+                                <p>世界规模最大的自动售货、咖啡服务和食品服务博览会</p>
+                                <button class="btn btn-outline-dark">美国自动售货展</button>
+                            </div>
+                            <div class="swiper-slide introduce">
+                                <button class="btn btn-outline-dark">广州展会</button>
+                            </div>
+                            <div class="swiper-slide introduce">
+                                <button class="btn btn-outline-dark">上海展会</button>
+                            </div>
+                            <div class="swiper-slide introduce">
+                                <button class="btn btn-outline-dark">广州展会</button>
+                            </div>
+                            <div class="swiper-slide introduce">
+                                <button class="btn btn-outline-dark">北京展会</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                        <div class="swiper-container intr-img">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting2.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting4.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting5.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/case/meeting6.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exhibition pb-5 pt-5">
+        <div class="container text-center">
+            <div class="line-title text-center pb-2">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>利保展厅</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">EXHIBITION HALL</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 pl-0 pr-0 bg-light introduce">
+                    <h5>START WITH THE WORD</h5>
+                    <p class="d-none d-md-block">公司生产全面执行TQM，引进了现金的测试设备</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm">起步，就与世界同步</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0">
+                    <img src="img/case/hall1.png" alt="" class="img-fluid img-filter">
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0 bg-dark text-light introduce">
+                    <h5>LEAD INDUSTRY</h5>
+                    <p class="d-none d-md-block">引领行业<br>享誉全球的领先科技和过硬品质</p>
+                    <button type="button" class="btn btn-outline-light btn-sm">核心技术 铸就行业领先</button>
+                </div>
+                <div class="col-6 col-md-3 pl-0 pr-0">
+                    <img src="img/case/hall2.png" alt="" class="img-fluid img-filter">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="js/header.js"></script>
+<script>
+    var intrSwiper = new Swiper ('.swiper-container.intr', {
+        loop: true,
+    });
+    var imgSwiper = new Swiper ('.swiper-container.intr-img', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on:{
+            slideNextTransitionStart: function(){
+                intrSwiper.slideTo(this.realIndex,1000);
+            },
+            slidePrevTransitionStart: function(){
+                intrSwiper.slideTo(this.realIndex,1000);
+            },
+        },
+    })         
+</script>
+</body>
+</html>

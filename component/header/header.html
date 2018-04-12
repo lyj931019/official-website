@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+	<a class="navbar-brand" href="index.html">
+		<img src="img/logo.png" alt="">
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+		<ul class="navbar-nav ">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" id='homepage'>首 页</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="solution.html" id="solution">解 决 方 案</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="product.html" id="product">产 品</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="case.html" id="case">案 例</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="service.html" id="service">服 务</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="about.html" id="about">关 于</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<script>
+	var before = location.pathname.lastIndexOf('/');
+	var after = location.pathname.lastIndexOf('.');
+	var str = location.pathname.slice(before+1,after);
+//	console.log(str);
+//	console.log(location.pathname);
+	$('#'+str).addClass("active");
+</script>

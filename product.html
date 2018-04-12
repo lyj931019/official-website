@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ali/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <title>Thybot</title>
+    <style>
+        .display-pro .cover {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        .display-pro .cover-hover:hover .cover{
+            display: flex;
+        }
+        .display-pro .bg-wavy{
+            background: url("img/product/bg1.png") 0 0 repeat;
+        }
+        .display-pro .bg-line{
+            background: url("img/product/bg2.png") 0 0 repeat;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<div id="main">
+    <div>
+        <img src="img/product/product_banner.png" alt="" style="width: 100%">
+    </div>
+    <div id="feature pt-2">
+        <div class="container pb-5 pt-5">
+            <div class="line-title text-center pb-5">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>机器特点</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">MACHINE FEATURES</p>
+            </div>
+            <img src="img/product/product_feature.png" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <div id="classify" class="bg-light">
+        <div class="container pb-5 pt-5">
+            <div class="line-title text-center pb-5">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>行业分类</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">INDUSTRY CATRGORY</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-bottom">
+                    <div class="row">
+                        <div class="col-12 pb-5">
+                            <button type="button" class="btn btn-dark btn-lg">电子产品</button>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/product/classify_1.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-bottom">
+                    <div class="row">
+                        <div class="col-12 pb-5">
+                            <button type="button" class="btn btn-dark btn-lg">生鲜食品</button>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/product/classify_2.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-bottom">
+                    <div class="row">
+                        <div class="col-12 pb-5">
+                            <button type="button" class="btn btn-dark btn-lg">特色食品</button>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/product/classify_3.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-bottom">
+                    <div class="row">
+                        <div class="col-12 pb-5">
+                            <button type="button" class="btn btn-dark btn-lg">生活用品</button>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/product/classify_4.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/product/classify_5.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button type="button" class="btn btn-dark btn-lg">健身产品</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/product/classify_6.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button type="button" class="btn btn-dark btn-lg">时尚首饰</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/product/classify_7.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button type="button" class="btn btn-dark btn-lg">文化创意</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 text-center pb-2 pt-2 border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/product/classify_8.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button type="button" class="btn btn-dark btn-lg">美食饮料</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="major  pb-5 pt-5">
+        <div class="container">
+            <div class="line-title text-center pb-5">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>主推产品</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">FEATURED PRODUCTS</p>
+            </div>
+            <!-- No.1 多功能综合机-->
+            <div class="row align-items-center pb-3 border-bottom">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="img/product/product_1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-3">
+                            <h3>NO1:多功能综合机</h3>
+                        </div>
+                        <div class="col-12 bg-light pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-dark btn-lg">
+                                        适<br>
+                                        用<br>
+                                        行<br>
+                                        业<br>
+                                    </button>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-vegetables"></i>
+                                                蔬菜
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-fruit"></i>
+                                                水果
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-meat"></i>
+                                                肉类
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2 ">
+                                                <i class="icon font_family icon-fresh"></i>
+                                                生鲜
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pl-0">
+                                        <button type="button" class="btn btn-outline-dark mb-2">
+                                            <i class="icon font_family icon-drug"></i>
+                                            药品
+                                        </button>
+                                        <button type="button" class="btn btn-outline-dark mb-2">
+                                            <i class="icon font_family icon-drink"></i>
+                                            饮料
+                                        </button>
+                                        <button type="button" class="btn btn-outline-dark mb-2">
+                                            <i class="icon font_family icon-snacks"></i>
+                                            零食
+                                        </button>
+                                        <button type="button" class="btn btn-outline-dark mb-2">
+                                            <i class="icon font_family icon-daily_use"></i>
+                                            生活用品
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3 pb-3" style="word-break:break-all;word-wrap:break-word;">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="row pt-1 pb-1">
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机尺寸</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            1120mm*800mm*2000mm
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机容量</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            6层、11道/层（可调）
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机重量</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            400KG
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>额定功率</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            800W(制冷):260W(待机)
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>制冷剂</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            R134a
+                                        </div>
+                                        <div class="col-4 border pr-1">
+                                            <b>制冷方式</b>
+                                        </div>
+                                        <div class="col-8 border  border-left-0">
+                                            风冷
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="row pt-1 pb-1">
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>储存温度</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            2-20℃(可调)
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>网络</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            3G/4G,千兆以太网,WIFI(可选)
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>支付系统</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            微信、支付宝
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>界面显示屏</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            32寸多点电容触摸显示屏
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>出货方式</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            皮带传递加上下运动机构
+                                        </div>
+                                        <div class="col-4 border pr-1">
+                                            <b>异常检测功能</b>
+                                        </div>
+                                        <div class="col-8 border  border-left-0">
+                                            开关门传感器
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- No.2 万能机-->
+            <div class="row align-items-center pt-3">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="img/product/product_2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-1">
+                            <h3>No.2:万能机</h3>
+                        </div>
+                        <div class="col-12 pt-3 pb-3" style="word-break:break-all;word-wrap:break-word;">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="row pt-1 pb-1">
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机尺寸</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            1200mm×900mm×2000mm
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机容量</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            106个，大货位73个，小货位33个 (可根据实际定制)
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>货架结构</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            分前后货架，前货架可打开
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>最大货物尺寸</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            200mm×200mm×80mm
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>最小货物尺寸</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            120mm×200mm×80mm
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>整机重量</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            500KG
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>额定功率</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            350W
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>网络</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            3G/4G、千兆以太网、Wifi
+                                        </div>
+                                        <div class="col-4 border pr-1">
+                                            <b>支付系统</b>
+                                        </div>
+                                        <div class="col-8 border border-left-0">
+                                            支付宝、微信(银联、信用卡为选配)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="row pt-1 pb-1">
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>界面显示屏</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            43寸红外液晶触摸屏
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>出货方式</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            机械手抓取+上下运动机构
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>前取物门</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            电动开关门，具防夹手功能
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>后防盗门</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            电动开关门
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>异常检测功能</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            商品有无、商品超高、震动传感器、 角度传感器、关门传感器、 GPS/北斗双卫星定位、异常指示灯
+                                        </div>
+                                        <div class="col-4 border border-bottom-0 pr-1">
+                                            <b>监控功能</b>
+                                        </div>
+                                        <div class="col-8 border border-bottom-0 border-left-0">
+                                            内/外摄像头
+                                        </div>
+                                        <div class="col-4 border pr-1">
+                                            <b>附加选配</b>
+                                        </div>
+                                        <div class="col-8 border border-left-0">
+                                            UPS系统、POS机、二维码扫描仪
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 bg-light pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-dark btn-lg">
+                                        适<br>
+                                        用<br>
+                                        行<br>
+                                        业<br>
+                                    </button>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-smallphone"></i>
+                                                手机
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-ipad"></i>
+                                                iPad
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2">
+                                                <i class="icon font_family icon-electronics"></i>
+                                                电子产品
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2 ">
+                                                <i class="icon font_family icon-precious_gift"></i>
+                                                贵重礼品
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark mb-2 ">
+                                                <i class="icon font_family icon-jewelry"></i>
+                                                首饰
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="display-pro pb-5 pt-5 mb-5">
+        <div class="container">
+            <div class="line-title text-center pb-5">
+                <h4>
+                    <span class="line mr-2"></span>
+                    <b>产品展示</b>
+                    <span class="line ml-2"></span>
+                </h4>
+                <p class="text-muted">PRODUCT DISPLAY</p>
+            </div>
+            <div class="row align-items-center text-center">
+                <div class="col-6 col-md-3 bg-light cover-hover">
+                    <img src="img/product/show1.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">冰河系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-secondary cover-hover ">
+                    <img src="img/product/show2.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">G2S PLUS</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-light cover-hover ">
+                    <img src="img/product/show3.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">综合机</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-wavy cover-hover ">
+                    <img src="img/product/show4.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">熟食系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-light cover-hover ">
+                    <img src="img/product/show5.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">G2S</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-light cover-hover ">
+                    <img src="img/product/show6.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">冰河系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover ">
+                    <img src="img/product/show7.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">臻荣系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover bg-secondary">
+                    <img src="img/product/show8.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">万能机</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover">
+                    <img src="img/product/show9.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">综合机</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover bg-line">
+                    <img src="img/product/show10.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">臻荣系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover bg-light">
+                    <img src="img/product/show11.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">玲珑系列</button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cover-hover">
+                    <img src="img/product/show12.png" alt="" class="img-fluid">
+                    <div class="cover">
+                        <button type="button" class="btn btn-outline-light">经典系列</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="js/header.js"></script>
+
+</body>
+</html>

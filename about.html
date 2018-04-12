@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ali/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/echarts.js"></script>
+    <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>-->
+    <script type="text/javascript" src="js/china.js"></script>
+    <!-- swiper -->
+    <title>Thybot</title>
+    <style>
+        #main > .sol-nav {
+            margin-top: -2.5rem;
+        }
+
+        #main > .sol-nav h5 {
+            white-space: nowrap;
+        }
+
+        #main > .sol-nav .sol-nav-item:hover, #main > .sol-nav .sol-nav-item.active {
+            /*color: #007bff;*/
+            color: #000000;
+            background-color: #fff;
+            /*border-bottom: 4px solid #007bff;*/
+            border-bottom: 4px solid #000;
+        }
+        .target .subintr{
+            display: flex;
+            justify-content:center;
+            align-items: flex-start;
+        }
+        .target .subintr>div:nth-child(1){
+            flex: 0 0 25%;
+        }
+        .target  .subintr  .line{
+            display: inline-block;
+            width: 100%;
+            border-top: 2px solid #c9c9c9;
+            height: 8px;
+        }
+        .map-container{
+            width: 100%;
+            height: 330px;
+            box-sizing: border-box;
+            border:1px solid #ccc;
+            position: relative;
+
+        }
+		.map-title{
+            position: absolute;
+            top: 0.4rem;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 1000;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .map-container{
+                height: 700px;
+            }
+            .map-title{
+                top: 5rem;
+            }
+        }
+
+       
+
+        .factory-profile  .introduce {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .factory-profile .introduce-1 {
+            width: 50%;
+            height: 50%;
+            background: rgba(52, 58, 64, .9);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-bottom: 10px solid transparent;
+            border-top: 10px solid transparent;
+        }
+
+        .triangle.triangle-left {
+            border-right: 16px solid #fff;
+            border-left: 0;
+            right: 0;
+        }
+
+        .triangle.triangle-right {
+            border-left: 16px solid #fff;
+            border-right: 0;
+            left: 0;
+        }
+
+        .triangle.triangle-left.triangle-dark {
+            border-right-color: #343a40;
+        }
+
+        .triangle.triangle-right.triangle-dark {
+            border-left-color: #343a40;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="main">
+    <div>
+        <img src="img/about/thybot.jpg" alt="" style="width: 100%">
+    </div>
+    <div class="container sol-nav">
+        <div class="row align-items-center text-center bg-light text-secondary">
+            <div class="col-12 col-md-3 pl-0 pr-0">
+                <h5 class="mb-0 active bg-light p-4 sol-nav-item"><strong>公司简介</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>工厂概况</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>公司动态</strong></h5>
+            </div>
+            <div class="col-12 col-md-3 pl-0 pr-0 ">
+                <h5 class="mb-0 bg-light p-4 sol-nav-item"><strong>行业新闻</strong></h5>
+            </div>
+        </div>
+    </div>
+    <div class="company-profile">
+        <div class="intro pt-5 pb-5 text-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <h4><strong>利保简介</strong></h4>
+                        <p class="text-secondary">THYBOT PROFILE</p>
+                    </div>
+                    <div class="col-12 col-md-9 bg-light">
+                        珠海市利保机器人有限公司成立于2013年11月，是广东省高新技术企业。 公司致力于提供新零售物联网的解决方案。
+                        公司拥有零售物联网平台研发中心、智能售货机和智能购物商用冷柜、一体液晶触摸屏制造工厂。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="target pt-5 pb-5 text-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 bg-light pt-4 pb-4">
+                        <h4><strong>我们的目标</strong></h4>
+                        <p class="text-secondary">THYBOTNESE TARGET</p>
+                        <div class="subintr">
+                            <div class="pl-2 pr-2">
+                                <span class="line"></span>
+                            </div>
+                            <div>
+                                让人们的生活<br>
+                                更加便利、优质、美好。
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1"></div>
+                    <div class="col-12 col-md-4 bg-light pt-4 pb-4">
+                        <h4><strong>我们的使命</strong></h4>
+                        <p class="text-secondary">THYBOTNESE MISSION</p>
+                        <div class="subintr">
+                            <div class="pl-2 pr-2">
+                                <span class="line"></span>
+                            </div>
+                            <div>
+                                聚集客户关注的挑战和压力，提供有竞争
+                                力的零售物联网的解决方案和服务，持续
+                                为客户创造最大的价值。
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1"></div>
+                    <div class="col-12 col-md-3 bg-light pt-4 pb-4">
+                        <h4><strong>利保文化</strong></h4>
+                        <p class="text-secondary">THYBOTNESE CULTURE</p>
+                        <div class="row pl-5 pr-5">
+                            <div class="col-6">聆听</div>
+                            <div class="col-6">思考</div>
+                            <div class="col-6">行动</div>
+                            <div class="col-6">深度学习</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="map-container">
+                            <div class="map-title">
+                                <h5><strong>利保机器人售货机分布地图</strong></h5>
+                            </div>
+                            <div id="map" style="width: 100%;height:100%;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="factory-profile">
+        <div class="pt-5 pb-5">
+            <div class="container pl-0 pr-0">
+                <div class="row mr-0 ml-0">
+                    <div class="col-12 col-md-6 pl-0 pr-0">
+                        <img src="img/about/factory_1.jpg" alt="" class="img-fluid">
+                        <div class="introduce-1 introduce text-white">
+                            <h5>ISO9001,TOM<br>
+                                恒温测试室</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pl-0 pr-0">
+                        <div class="row mr-0 ml-0">
+                            <div class="col-6 pl-0 pr-0 bg-light introduce">
+                                <h5>模拟运输测试仪</h5>
+                            </div>
+                            <div class="col-6 pl-0 pr-0">
+                                <img src="img/about/factory_2.jpg" alt="" class="img-fluid">
+                                <div class="triangle triangle-right"></div>
+                            </div>
+
+                            <div class="col-6 pl-0 pr-0">
+                                <img src="img/about/factory_3.jpg" alt="" class="img-fluid">
+                                <div class="triangle triangle-left"></div>
+                            </div>
+                            <div class="col-6 pl-0 pr-0 introduce">
+                                <h5>智能制造生产线</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <p style="text-indent: 2rem;">公司生产目前已经全面执行全面质量管理体系（TQM），同时引进先进的测试设备，模拟设备在恶劣工况条件的使用情况，以及在恶劣运输条件下，产品包装的合理性以及稳定性。 严格执行国际先进的全面质量管理体系（TQM）。</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="footer"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="js/header.js"></script>
+<script>
+    var dom = document.getElementById("map");
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
+    var geoCoordMap = {
+        "海门":[121.15,31.89],
+        "鄂尔多斯":[109.781327,39.608266],
+        "招远":[120.38,37.35],
+        "舟山":[122.207216,29.985295],
+        "齐齐哈尔":[123.97,47.33],
+        "盐城":[120.13,33.38],
+        "赤峰":[118.87,42.28],
+        "青岛":[120.33,36.07],
+        "乳山":[121.52,36.89],
+        "金昌":[102.188043,38.520089],
+        "泉州":[118.58,24.93],
+        "莱西":[120.53,36.86],
+        "日照":[119.46,35.42],
+        "胶南":[119.97,35.88],
+        "南通":[121.05,32.08],
+        "拉萨":[91.11,29.97],
+        "云浮":[112.02,22.93],
+        "梅州":[116.1,24.55],
+        "文登":[122.05,37.2],
+        "上海":[121.48,31.22],
+        "攀枝花":[101.718637,26.582347],
+        "威海":[122.1,37.5],
+        "承德":[117.93,40.97],
+        "厦门":[118.1,24.46],
+        "汕尾":[115.375279,22.786211],
+        "潮州":[116.63,23.68],
+        "丹东":[124.37,40.13],
+        "太仓":[121.1,31.45],
+        "曲靖":[103.79,25.51],
+        "烟台":[121.39,37.52],
+        "福州":[119.3,26.08],
+        "瓦房店":[121.979603,39.627114],
+        "即墨":[120.45,36.38],
+        "抚顺":[123.97,41.97],
+        "玉溪":[102.52,24.35],
+        "张家口":[114.87,40.82],
+        "阳泉":[113.57,37.85],
+        "莱州":[119.942327,37.177017],
+        "湖州":[120.1,30.86],
+        "汕头":[116.69,23.39],
+        "昆山":[120.95,31.39],
+        "宁波":[121.56,29.86],
+        "湛江":[110.359377,21.270708],
+        "揭阳":[116.35,23.55],
+        "荣成":[122.41,37.16],
+        "连云港":[119.16,34.59],
+        "葫芦岛":[120.836932,40.711052],
+        "常熟":[120.74,31.64],
+        "东莞":[113.75,23.04],
+        "河源":[114.68,23.73],
+        "淮安":[119.15,33.5],
+        "泰州":[119.9,32.49],
+        "南宁":[108.33,22.84],
+        "营口":[122.18,40.65],
+        "惠州":[114.4,23.09],
+        "江阴":[120.26,31.91],
+        "蓬莱":[120.75,37.8],
+        "韶关":[113.62,24.84],
+        "嘉峪关":[98.289152,39.77313],
+        "广州":[113.23,23.16],
+        "延安":[109.47,36.6],
+        "太原":[112.53,37.87],
+        "清远":[113.01,23.7],
+        "中山":[113.38,22.52],
+        "昆明":[102.73,25.04],
+        "寿光":[118.73,36.86],
+        "盘锦":[122.070714,41.119997],
+        "长治":[113.08,36.18],
+        "深圳":[114.07,22.62],
+        "珠海":[113.52,22.3],
+        "宿迁":[118.3,33.96],
+        "咸阳":[108.72,34.36],
+        "铜川":[109.11,35.09],
+        "平度":[119.97,36.77],
+        "佛山":[113.11,23.05],
+        "海口":[110.35,20.02],
+        "江门":[113.06,22.61],
+        "章丘":[117.53,36.72],
+        "肇庆":[112.44,23.05],
+        "大连":[121.62,38.92],
+        "临汾":[111.5,36.08],
+        "吴江":[120.63,31.16],
+        "石嘴山":[106.39,39.04],
+        "沈阳":[123.38,41.8],
+        "苏州":[120.62,31.32],
+        "茂名":[110.88,21.68],
+        "嘉兴":[120.76,30.77],
+        "长春":[125.35,43.88],
+        "胶州":[120.03336,36.264622],
+        "银川":[106.27,38.47],
+        "张家港":[120.555821,31.875428],
+        "三门峡":[111.19,34.76],
+        "锦州":[121.15,41.13],
+        "南昌":[115.89,28.68],
+        "柳州":[109.4,24.33],
+        "三亚":[109.511909,18.252847],
+        "自贡":[104.778442,29.33903],
+        "吉林":[126.57,43.87],
+        "阳江":[111.95,21.85],
+        "泸州":[105.39,28.91],
+        "西宁":[101.74,36.56],
+        "宜宾":[104.56,29.77],
+        "呼和浩特":[111.65,40.82],
+        "成都":[104.06,30.67],
+        "大同":[113.3,40.12],
+        "镇江":[119.44,32.2],
+        "桂林":[110.28,25.29],
+        "张家界":[110.479191,29.117096],
+        "宜兴":[119.82,31.36],
+        "北海":[109.12,21.49],
+        "西安":[108.95,34.27],
+        "金坛":[119.56,31.74],
+        "东营":[118.49,37.46],
+        "牡丹江":[129.58,44.6],
+        "遵义":[106.9,27.7],
+        "绍兴":[120.58,30.01],
+        "扬州":[119.42,32.39],
+        "常州":[119.95,31.79],
+        "潍坊":[119.1,36.62],
+        "重庆":[106.54,29.59],
+        "台州":[121.420757,28.656386],
+        "南京":[118.78,32.04],
+        "滨州":[118.03,37.36],
+        "贵阳":[106.71,26.57],
+        "无锡":[120.29,31.59],
+        "本溪":[123.73,41.3],
+        "克拉玛依":[84.77,45.59],
+        "渭南":[109.5,34.52],
+        "马鞍山":[118.48,31.56],
+        "宝鸡":[107.15,34.38],
+        "焦作":[113.21,35.24],
+        "句容":[119.16,31.95],
+        "北京":[116.46,39.92],
+        "徐州":[117.2,34.26],
+        "衡水":[115.72,37.72],
+        "包头":[110,40.58],
+        "绵阳":[104.73,31.48],
+        "乌鲁木齐":[87.68,43.77],
+        "枣庄":[117.57,34.86],
+        "杭州":[120.19,30.26],
+        "淄博":[118.05,36.78],
+        "鞍山":[122.85,41.12],
+        "溧阳":[119.48,31.43],
+        "库尔勒":[86.06,41.68],
+        "安阳":[114.35,36.1],
+        "开封":[114.35,34.79],
+        "济南":[117,36.65],
+        "德阳":[104.37,31.13],
+        "温州":[120.65,28.01],
+        "九江":[115.97,29.71],
+        "邯郸":[114.47,36.6],
+        "临安":[119.72,30.23],
+        "兰州":[103.73,36.03],
+        "沧州":[116.83,38.33],
+        "临沂":[118.35,35.05],
+        "南充":[106.110698,30.837793],
+        "天津":[117.2,39.13],
+        "富阳":[119.95,30.07],
+        "泰安":[117.13,36.18],
+        "诸暨":[120.23,29.71],
+        "郑州":[113.65,34.76],
+        "哈尔滨":[126.63,45.75],
+        "聊城":[115.97,36.45],
+        "芜湖":[118.38,31.33],
+        "唐山":[118.02,39.63],
+        "平顶山":[113.29,33.75],
+        "邢台":[114.48,37.05],
+        "德州":[116.29,37.45],
+        "济宁":[116.59,35.38],
+        "荆州":[112.239741,30.335165],
+        "宜昌":[111.3,30.7],
+        "义乌":[120.06,29.32],
+        "丽水":[119.92,28.45],
+        "洛阳":[112.44,34.7],
+        "秦皇岛":[119.57,39.95],
+        "株洲":[113.16,27.83],
+        "石家庄":[114.48,38.03],
+        "莱芜":[117.67,36.19],
+        "常德":[111.69,29.05],
+        "保定":[115.48,38.85],
+        "湘潭":[112.91,27.87],
+        "金华":[119.64,29.12],
+        "岳阳":[113.09,29.37],
+        "长沙":[113,28.21],
+        "衢州":[118.88,28.97],
+        "廊坊":[116.7,39.53],
+        "菏泽":[115.480656,35.23375],
+        "合肥":[117.27,31.86],
+        "武汉":[114.31,30.52],
+        "大庆":[125.03,46.58]
+    };
+
+    var convertData = function (data) {
+        var res = [];
+        for (var i = 0; i < data.length; i++) {
+            var geoCoord = geoCoordMap[data[i].name];
+            if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                });
+            }
+        }
+        return res;
+    };
+
+    option = {
+        backgroundColor: '#fff',
+//        title: {
+//            text: '利保机器人售货机分布地图',
+//            /*subtext: 'data from PM25.in',
+//            sublink: 'http://www.pm25.in',*/
+//            x:'center',
+//            textStyle: {
+//                color: '#000',
+//            }
+//        },
+        tooltip: {
+            trigger: 'item',
+            formatter: function (params) {
+                return params.name + ' : ' + params.value[2];
+            }
+        },
+       /* legend: {
+            orient: 'vertical',
+            y: 'bottom',
+            x:'right',
+            data:['pm2.5'],
+            textStyle: {
+                color: '#fff'
+            }
+        },*/
+       /* visualMap: {
+            min: 0,
+            max: 200,
+            calculable: true,
+            inRange: {
+                color: ['#50a3ba', '#eac736', '#d94e5d']
+            },
+            textStyle: {
+                color: '#fff'
+            }
+        },*/
+        geo: {
+            map: 'china',
+            label: {
+                emphasis: {
+                    show: false
+                }
+            },
+            itemStyle: {
+                normal: {
+                    areaColor: '#ccc',
+                    borderColor: '#111'
+                },
+                emphasis: {
+                    areaColor: '#aaa'
+                }
+            }
+        },
+        series: [
+            {
+                name: 'pm2.5',
+                type: 'scatter',
+                coordinateSystem: 'geo',
+                data: convertData([
+
+                    {name: "东莞", value: 136},
+                    {name: "广州", value: 138},
+                    {name: "中山", value: 239},
+                    {name: "深圳", value: 141},
+                    {name: "珠海", value: 322},
+                    {name: "苏州", value: 450},
+
+
+                    {name: "扬州", value: 164},
+                    {name: "南京", value: 267},
+                    {name: "北京", value: 679},
+
+
+                    {name: "丽水", value: 533},
+
+
+                ]),
+                symbolSize: 12,
+                label: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: false
+                    }
+                },
+                itemStyle: {
+                    emphasis: {
+                        borderColor: '#fff',
+                        borderWidth: 1
+                    }
+                }
+            }
+        ]
+    };
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+    window.onresize = function () {
+        myChart.resize();
+    };
+
+
+
+</script>
+</body>
+</html>
